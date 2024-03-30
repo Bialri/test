@@ -7,9 +7,9 @@ apples = []
 
 app = FastAPI()
 
-@app.get('/apples/')
-def hello(id,all):
-    return str(apples)
+@app.get('/')
+def hello():
+    return '<h1 style="color: red"></h1>'
 
 @app.post('/apples/')
 def hi():
